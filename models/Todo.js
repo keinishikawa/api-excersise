@@ -12,5 +12,23 @@ class Todo {
   }
 }
 
+for (let i = 0; i<5;i++){
+    const index = i +1 ;
+    const todo = new Todo({
+        title:"タイトル"+(i+1),
+        body:"ボディ"+index
+    });
+
+    todos.push(todo);
+
+    
+}
+
+
+
 // メソッドを実装していく
-module.exports = {};
+module.exports = {
+    findAll:() =>{
+        return todos.slice();
+    }
+};
