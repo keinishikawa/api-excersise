@@ -1,0 +1,10 @@
+http://localhost:8080/api/todos
+
+
+
+
+###
+POST http://localhost:8080/api/todos
+Content-Type: application/json
+
+{"title":"タイトル", "body":"ぼでー"}
